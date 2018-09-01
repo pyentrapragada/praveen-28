@@ -1,0 +1,50 @@
+<!DOCTYPE htnl>
+<html>
+<head>
+<style>
+*{
+     padding: 10px;
+    border: 1px solid #4CAF50;
+</style>
+</head>
+<script>
+function doplus(){
+document.getElementById("count").value = ++document.getElementById("count").value;
+}
+function dominus(){
+document.getElementById("count").value = --document.getElementById("count").value;
+}
+function doplus1(){
+document.getElementById("count1").value=++document.getElementById("count1").value
+}
+function dominus1(){
+
+document.getElementById("count1").value=--document.getElementById("count1").value
+}
+function sum(){
+var x=document.getElementById("count").value;
+var y=document.getElementById("count1").value;
+z=2*(x/2+y/2);
+document.getElementById("count2").value=z;
+}
+
+
+</script>
+
+
+<body>
+<form name="counter">
+<input type="button" value="A+" onclick="doplus()">
+<input type="text" value="0" id="count">
+<input type="button" value="A-"  onclick="dominus()"></br></br>
+<input type="button" value="B+" onclick="doplus1()">
+<input type="text" value="0" id="count1">
+<input type="button" value="B-" onclick="dominus1()"></br></br>
+<input type="button" value="A&B" onclick="sum()">
+<input type="text" value="" id="count2">
+
+
+<form>
+</body>
+
+</html>
